@@ -8,7 +8,7 @@ const HIDDEN_KEY = "hidden";
 const USER_NAME = "username"
 
 
-body.style.backgroundColor ="tomato"
+body.style.backgroundColor ="#64b5f6"
 
 
 function paintName(user){
