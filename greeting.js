@@ -12,7 +12,7 @@ body.style.backgroundColor ="tomato"
 
 
 function paintName(user){
-    greeting.classList.toggle("greeting")
+    greeting.classList.remove(HIDDEN_KEY);
     greeting.innerText = `Good Day! ${user}`;
     
 }
@@ -23,7 +23,7 @@ function handleSubmit(event){
     const user = loginInput.value;
     localStorage.setItem(USER_NAME,user)
     loginInput.value = "";
-    loginForm.classList.add("login-form")
+    loginForm.classList.toggle(HIDDEN_KEY);
     paintName(user);
     
 }
