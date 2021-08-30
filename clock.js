@@ -1,6 +1,16 @@
 const clockContainer = document.querySelector("#clock");
-const clock = clockContainer.querySelector("h1");
+let clock = document.querySelector("#clock h1");
 
-clock.innerText = "23:52:15"
 
-//setinterval
+function handleClock(){
+    const time = new Date();
+    const hours = String(time.getHours()).padStart(2,'0');
+    const mins = String(time.getMinutes()).padStart(2,'0');
+    const sec = String(time.getSeconds()).padStart(2,'0');
+    
+    clock.innerText = `${hours}:${mins}:${sec}`
+}
+
+handleClock()
+
+setInterval(handleClock,1000);
