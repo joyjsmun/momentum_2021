@@ -4,5 +4,3 @@ const randomImg = imgs[Math.floor(Math.random()*imgs.length)]
 
 
 bodyBg.style.backgroundImage = "url(' ${randomImg}')";
-
-bodyBg.src = 
